@@ -1,0 +1,19 @@
+package templates
+
+templ Base(component templ.Component, title string) {
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>{ title }</title>
+            <link rel="stylesheet" href="/static/css/style.css">
+            <script src="/static/js/htmx.js"></script>
+        </head>
+        <body>
+            @component
+            <h1>hello</h1>
+            <h2>hello again</h2>
+        </body>
+    </html>
+}
